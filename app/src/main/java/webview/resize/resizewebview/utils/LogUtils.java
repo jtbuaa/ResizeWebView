@@ -25,7 +25,7 @@ import java.util.regex.Pattern;
 
 public class LogUtils {
 
-    public static final String TAG = LogTag.getLogTag();
+    public static final String TAG = "LogUtils";
 
     // "GMT" + "+" or "-" + 4 digits
     private static final Pattern DATE_CLEANUP_PATTERN_WRONG_TIMEZONE =
@@ -166,10 +166,11 @@ public class LogUtils {
      * Checks to see whether or not a log for the specified tag is loggable at the specified level.
      */
     public static boolean isLoggable(String tag, int level) {
-        if (MAX_ENABLED_LOG_LEVEL > level) {
+        return true;
+        /*if (MAX_ENABLED_LOG_LEVEL > level) {
             return false;
         }
-        return Log.isLoggable(tag, level) || Log.isLoggable(TAG, level);
+        return Log.isLoggable(tag, level) || Log.isLoggable(TAG, level);*/
     }
 
     /**

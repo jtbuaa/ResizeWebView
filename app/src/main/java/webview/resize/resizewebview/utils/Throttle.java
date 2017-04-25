@@ -39,7 +39,7 @@ public class Throttle {
     // exposed for testing
     public static final int TIMEOUT_EXTEND_INTERVAL = 500;
 
-    private static final String LOG_TAG = LogTag.getLogTag();
+    private static final String LOG_TAG = "Throttle";
 
     private static Timer TIMER = new Timer();
 

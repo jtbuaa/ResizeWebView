@@ -25,7 +25,6 @@ import android.view.MotionEvent;
 import android.webkit.WebView;
 
 import webview.resize.resizewebview.utils.Clock;
-import webview.resize.resizewebview.utils.LogTag;
 import webview.resize.resizewebview.utils.LogUtils;
 import webview.resize.resizewebview.utils.Throttle;
 
@@ -35,7 +34,7 @@ import webview.resize.resizewebview.utils.Throttle;
  */
 public class MessageWebView extends WebView implements MessageScrollView.Touchable {
 
-    private static final String LOG_TAG = LogTag.getLogTag();
+    private static final String LOG_TAG = "MessageWebView";
 
     private static Handler sMainThreadHandler;
 
@@ -88,7 +87,7 @@ public class MessageWebView extends WebView implements MessageScrollView.Touchab
     public boolean onTouchEvent(MotionEvent event) {
         mTouched = true;
         final boolean handled = super.onTouchEvent(event);
-        LogUtils.d(MessageScrollView.LOG_TAG,"OUT WebView.onTouch, returning handled=%s ev=%s",
+        LogUtils.d(LOG_TAG,"OUT WebView.onTouch, returning handled=%s ev=%s",
                 handled, event);
         return handled;
     }

@@ -104,7 +104,7 @@ public class MessageScrollView extends ScrollView implements ScrollNotifier,
     private final Set<ScrollListener> mScrollListeners =
             new CopyOnWriteArraySet<ScrollListener>();
 
-    public static final String LOG_TAG = "MsgScroller";
+    public static final String LOG_TAG = "MessageScrollView";
 
     public MessageScrollView(Context c) {
         this(c, null);
