@@ -1,8 +1,8 @@
 # ResizeWebView
 better pinch-zoom experience of webview
 
-![Screen Shot](https://raw.githubusercontent.com/jtbuaa/iReaderHome/master/screenshot/screenshot1.png)
-![Screen Shot](https://raw.githubusercontent.com/jtbuaa/iReaderHome/master/screenshot/screenshot2.png)
+![Screen Shot](https://raw.githubusercontent.com/jtbuaa/ResizeWebView/master/screenshot/screenshot1.png)
+![Screen Shot](https://raw.githubusercontent.com/jtbuaa/ResizeWebView/master/screenshot/screenshot2.png)
 
 when pinch-zoom on smartisan T1 or some low version android phone, the webview of this demo will re-arrange the web content.
 but on most high version android phone, it does not re-arrange.
